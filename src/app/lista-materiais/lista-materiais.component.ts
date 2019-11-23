@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaMateriaisComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor() { 
+
+
+
+  }
 
   ngOnInit() {
   }
+  
 
 }
