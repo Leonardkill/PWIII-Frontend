@@ -1,20 +1,25 @@
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <ul class="navbar-nav">
-  <li class="nav-item">
-  <a routerLink="listagem" class="nav-link" routerLinkActive="active">Lista de Materiais</a>
-  </li>
-  <li class="nav-item">
-  <a routerLink="novo" class="nav-link" routerLinkActive="active">Novo</a>
-  </li>
-  </ul>
-  </nav>
-  <div class="container">
-  <br>
-  <h2 style="text-align: center;">{{title}}</h2>
-  <hr>
-  <div class="card">
-  <div class="card-body">
-  <router-outlet></router-outlet>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Lista de Clientes</h2>
   </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Coluna 1</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let it of materiais">
+          <td>{{it.dsMaterial}}</td>
+          <td>
+            <button class="btn btn-danger">Excluir</button>
+            <button class="btn btn-info" style="margin-left: 10px">Editar</button>
+            <button class="btn btn-info" style="margin-left: 10px">Detalhar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  </div>
+</div>

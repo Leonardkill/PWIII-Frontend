@@ -9,7 +9,7 @@ import {retry , catchError} from 'rxjs/operators';
   providedIn: 'root'
 })
 export class MateriaisAPIService {
-  apiURL : string = "http://localhost:8080/api/listagem";
+  apiURL : string = "http://localhost:8080/cleanworld/materiais";
 
 
  
